@@ -37,10 +37,10 @@ end
 def valid_move?(board,user_index)
   if user_index.between?(0, 8) && position_taken?(board,user_index) == false
     return true
-  elsif user_index.between?(0, 8) && position_taken?(board,user_index) == true
-    return false
-  else
-    return false
+  #elsif user_index.between?(0, 8) && position_taken?(board,user_index) == true
+    #return false
+  #else
+    #return false
   end
 end
 
