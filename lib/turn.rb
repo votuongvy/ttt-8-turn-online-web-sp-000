@@ -34,7 +34,7 @@ def position_taken?(board,user_index)
   end
 end
 
-def valid_move?(board,user_index)
+def valid_move?(board)
   if user_index.between?(0, 8) && position_taken?(board,user_index) == false
     return true
   #elsif user_index.between?(0, 8) && position_taken?(board,user_index) == true
