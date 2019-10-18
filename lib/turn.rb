@@ -53,6 +53,6 @@ def turn(board)
     move(board,user_index)
     display_board(board)
   else
-    puts "Please enter another number between 1-9:"
+    turn(board)
   end
 end
