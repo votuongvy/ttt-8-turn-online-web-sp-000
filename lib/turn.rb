@@ -49,9 +49,9 @@ def turn(user_index)
   puts "Please enter 1-9:"
   user_input = gets.strip
   user_index = input_to_index(user_input)
-  #if user_index.between?(0,8) && valid_move?(board,user_index) == true
-    #move(board,user_index,character = "X")
-  #else
-    #puts "Please enter another number between 1-9:"
-  #end
+  if user_index.between?(0,8) && valid_move?(board,user_index) == true
+    move(board,user_index,character = "X")
+  else
+    puts "Please enter another number between 1-9:"
+  end
 end
